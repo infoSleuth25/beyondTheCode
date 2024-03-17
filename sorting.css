@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik:wght@400;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Rubik,sans-serif;
+}
+
+header{
+    padding: 5px 100px;
+    top: 0;
+    width: 100%;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    padding-top: 0%;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.6s;
+    color:rgb(102 116 204)
+}
+header #icon{
+    display: none;
+} 
+header ul li a:hover{
+    color: black;
+}
+
+.column1{
+    float: left;
+    width: 80%;
+}
+
+.column2{
+    float: left;
+    width: 20%;
+}
+
+.heading1{
+    text-align: center;
+    color: rgb(74 79 92);
+    margin-top: 1%;
+}
+
+#a_generate{
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: 1rem;
+    padding: 1.5%;
+    border-radius:10px; 
+}
+
+#a_generate:hover{
+    background-color:#c5c6d0 ;
+}
+
+#sizeofArray{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#a_size{
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 250px;
+}
+
+.users{
+    margin-left: 5%;
+}
+
+.heading2{
+    text-align: center;
+    color: rgb(74 79 92);
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+
+.or{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.form1{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+
+.nInput{
+    margin-top: 3%;
+    border-radius: 4px;
+    margin-bottom: 5%;
+    border: solid black 2px;
+}
+
+#submitButton{
+    font-size: 1rem;
+    padding: 1.5%;
+    border-radius:10px; 
+}
+
+#submitButton:hover{
+    background-color:#c5c6d0 ;
+}
+
+.speed{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#a_speed{
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 250px;
+}
+
+.column1{
+    padding-left: 2%;
+    padding-top: 0.5%;
+    padding-right: 2%;
+    display: flex;
+    height: 640.844px;
+}
+
+.algos{
+    display: inline-block;
+    margin-top: 1%;
+    text-align: center;
+    width: 100%;
+}
+
+#selection,#bubble,#insertion,#quick,#merge,#heap{
+    margin-left: 3%;
+    font-size: 1rem;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-right: 3%;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+
+#selection:hover{
+    background-color: rgb(74 79 92);
+}
+
+#bubble:hover{
+    background-color: rgb(74 79 92);
+}
+
+#insertion:hover{
+    background-color: rgb(74 79 92);
+}
+
+#quick:hover{
+    background-color: rgb(74 79 92);
+}
+
+#merge:hover{
+    background-color: rgb(74 79 92);
+}
+
+#heap:hover{
+    background-color: rgb(74 79 92);
+}

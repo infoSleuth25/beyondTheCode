@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/t4.png">
+    <title>Beyond The Code</title>
+
+    <link rel="stylesheet" href="searching.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo"  src="images/logo.png" height="55px" width="255px">
+        </a>
+        <a href="javascript:void(0);" id="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <ul id="mylinks" class="list-unstyled">
+            <li style="padding-right:5%;"><a href="index.html"><b>HOME</b></a></li> 
+            <li style="padding-right: 5%;"><a href="searching.html"><b>SEARCHING</b></a></li> 
+            <li style="padding-right: 5%;"><a href="sorting.html"><b>SORTING</b></a></li> 
+            <li style="padding-right: 5%;"><a href="mailto:siddheshborse25@gmail.com"><b>CONTACT</b></a></li> 
+        </ul>
+    </header>
+
+    <div class="row">
+        <div class="column1" id="column1">
+            
+        </div>
+        <div class="column2">
+            <h2 class="heading2">User Input</h2>
+            <div class="users">
+                <label for="inputN">Enter the Size of the Array (n) *</label>
+                <input id="arraySize" required class="nInput" type="text" required>
+                <br>
+                <label for="arrayElements">Enter the Array Elements*</label>
+                <br>
+                <label for="">( 1<=array[i]<=100 )</label>
+                <br>
+                <label for="">(Provide Space Seperated Integers)</label>
+                <br>
+                <textarea required id="arrayElements" class="nInput" name="Text1" rows="5" ></textarea>
+                <br>
+                <label for="inputN">Enter the key to be searched*</label>
+                <input id="key" required class="keyInput" type="text">
+                <br>
+                <p class="speed">Speed of the algorithm:</p>
+                <input id="a_speed" type="range"  min=1 max=5 step=1 value=2>
+                <button id="submitButton" onclick="myFunction()">Generate Array</button>
+            </div>
+
+            <div class="algos">
+                <button id="Linear">Linear Search</button>
+                <br>
+                <button id="Binary">Binary Search</button>
+            </div>
+
+            <h2 class="heading2">Complexity Analysis</h2>
+            <p id="timeComplexity">Time Complexity : </p>
+            <span id="time"></span>
+            <p id="spaceComplexity">Space Complexity : </p>
+            <span id="space"></span>
+        </div>
+    </div>
+
+    <div class="answer">
+        <h1 id="answer"></h1>
+    </div>
+
+    <script src="/scripts/searching.js"></script>
+    <script src="/scripts/visualizations.js"></script>  
+    <script src="/scripts/linear.js"></script>
+    <script src="scripts/binarySearch.js"></script>
+</body>
+</html>

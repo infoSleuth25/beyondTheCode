@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/t4.png">
+    <title>Beyond The Code</title>
+
+    <link rel="stylesheet" href="sorting.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="images/logo.png" height="55px" width="255px">
+        </a>
+        <a href="javascript:void(0);" id="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <ul id="mylinks" class="list-unstyled">
+            <li style="padding-right: 5%;"><a href="index.html"><b>HOME</b></a></li> 
+            <li style="padding-right: 5%;"><a href="searching.html"><b>SEARCHING</b></a></li> 
+            <li style="padding-right: 5%;"><a href="sorting.html"><b>SORTING</b></a></li> 
+            <li style="padding-right: 5%;"><a href="mailto:siddheshborse25@gmail.com"><b>CONTACT</b></a></li> 
+        </ul>
+    </header>
+
+    <div class="row">
+        <div class="column1" id="column1">
+        </div>
+        <div class="column2">
+            <h2 class="heading1">Random Input</h2>
+            <button id="a_generate">Generate New Array</button>
+            <p id="sizeofArray">Size of the array</p>
+            <input id="a_size" type="range" min=10 max=40 step=1 value=15>
+            <h1 class="or">OR</h1>
+            <h2 class="heading2">User Input</h2>
+            <div class="users">
+                <label for="inputN">Enter the Size of the Array (n) *</label>
+                <input id="arraySize" required class="nInput" type="text">
+                <br>
+                <label for="arrayElements">Enter the Array Elements*</label>
+                <br>
+                <label for="">( 1<=array[i]<=100 )</label>
+                <br>
+                <textarea required id="arrayElements" class="nInput" name="Text1" rows="5"></textarea>
+                <br>
+                <button id="submitButton" onclick="myFunction()">Submit</button>
+            </div>
+
+            <h1 class="or">AND</h1>
+            <p class="speed">Speed of the algorithm:</p>
+            <input id="a_speed" type="range"  min=1 max=5 step=1 value=4>
+        </div>
+    </div>
+
+    <div class="algos">
+        <button id="selection">Selection Sort</button>
+        <button id="bubble">Bubble Sort</button>
+        <button  id="insertion">Insertion Sort</button>
+        <button id="merge">Merge Sort</button>
+        <button id="quick">Quick Sort</button>
+        <!-- <button id="heap">Heap Sort</button> -->
+    </div>
+    <script src="/scripts/sorting.js"></script>
+    <script src="/scripts/visualizations.js"></script>  
+    <script src="/scripts/bubble_sort.js"></script>
+    <script src="/scripts/selection_sort.js"></script>
+    <script src="/scripts/insertion_sort.js"></script>
+    <script src="/scripts/merge_sort.js"></script>
+    <script src="/scripts/quick_sort.js"></script>
+    <script src="/scripts/heap_sort.js"></script>
+</body>
+</html>
